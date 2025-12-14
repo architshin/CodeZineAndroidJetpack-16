@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/memoListRoot"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MemoListFragment">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/ablList"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<com.google.android.material.appbar.MaterialToolbar
+			android:id="@+id/tbList"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="?attr/colorPrimary"
+			android:minHeight="?attr/actionBarSize"
+			android:theme="?attr/actionBarTheme"
+			app:layout_scrollFlags="scroll|enterAlways"
+			app:title="@string/tb_list_title" />
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/rvMenu"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior"
+		app:layout_constraintTop_toBottomOf="@+id/tbList" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
