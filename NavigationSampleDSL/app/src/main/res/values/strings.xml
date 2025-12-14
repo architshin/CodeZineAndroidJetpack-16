@@ -1,0 +1,7 @@
+<resources>
+	<string name="app_name">NavigationSampleDSL</string>
+	<string name="tb_list_title">メモリスト</string>
+	<string name="tb_detail_title">メモ詳細</string>
+	<string name="tv_lb_title">メモタイトル</string>
+	<string name="tv_lb_content">メモ内容</string>
+</resources>
